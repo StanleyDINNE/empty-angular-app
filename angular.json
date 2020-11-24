@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "perf-ang"
+  "defaultProject": "perf-ang",
+  "cli": {
+    "analytics": "c3016533-a85b-4a1f-a137-87b2d9e8f71b"
+  }
 }

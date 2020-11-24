@@ -1,6 +1,38 @@
-# PerfAng
+# Empty Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+## For performance testing 
+
+## Project setup
+```
+npm install
+```
+
+### Run the application in production mode:
+
+1) Run prod command
+```
+npm run start:prod
+```
+
+Note: If you want to run the build-report command on your own vue 3 app, you need to add the command in the `package.json`.
+```
+    "start:prod": "ng serve --prod",
+```
+
+2) Access to the page at `http://localhost:4200`
+
+5) Open the chrome's console, go to the `Lighthouse` tab and run an audit with the Performance box checked (you can remove the other checkboxes)
+
+### Measure the bundle size:
+
+```
+npm run build:stats
+```
+
+Note: If you want to run the build-report command on your own vue 3 app, you need to add the command in the `package.json`.
+```
+    "build:report": "ng build --prod --stats-json"
+```
 
 ## Development server
 
