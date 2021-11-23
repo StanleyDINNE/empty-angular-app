@@ -1,38 +1,6 @@
-# Empty Angular App
+# EmptyAngularApp
 
-## For performance testing 
-
-## Project setup
-```
-npm install
-```
-
-### Run the application in production mode:
-
-1) Run prod command
-```
-npm run start:prod
-```
-
-Note: If you want to run the build-report command on your own vue 3 app, you need to add the command in the `package.json`.
-```
-    "start:prod": "ng serve --prod",
-```
-
-2) Access to the page at `http://localhost:4200`
-
-5) Open the chrome's console, go to the `Lighthouse` tab and run an audit with the Performance box checked (you can remove the other checkboxes)
-
-### Measure the bundle size:
-
-```
-npm run build:stats
-```
-
-Note: If you want to run the build-report command on your own vue 3 app, you need to add the command in the `package.json`.
-```
-    "build:report": "ng build --prod --stats-json"
-```
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development server
 
@@ -44,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
@@ -52,7 +20,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
