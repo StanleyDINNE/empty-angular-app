@@ -1,6 +1,44 @@
-# EmptyAngularApp
+# Empty Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+## For performance testing 
+
+## Project setup
+```
+npm install
+```
+
+### Run the application in production mode:
+
+1) Run prod command
+```
+npm run start:prod
+```
+
+Note: If you want to run the build-report command on your own angular app, you need to add the command in the `package.json`.
+```
+    "start:prod": "ng serve --prod",
+```
+
+2) Access to the page at `http://localhost:4200`
+
+5) Open the chrome's console, go to the `Lighthouse` tab and run an audit with the Performance box checked (you can remove the other checkboxes)
+
+### Measure the bundle size:
+
+Build the bundle size report:
+```
+npm run build:report
+```
+
+Launch the report result:
+```
+npm run watch:report
+```
+
+Note: If you want to run the build-report command on your own angular app, you need to add the command in the `package.json`.
+```
+    "build:report": "ng build --prod --stats-json"
+```
 
 ## Development server
 
@@ -12,7 +50,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
@@ -20,7 +58,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
