@@ -40,6 +40,8 @@ Note: If you want to run the build-report command on your own angular app, you n
     "build:report": "ng build --prod --stats-json"
 ```
 
+Click on the button `Show content of concatenated modules` in the left menu to see the details.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
